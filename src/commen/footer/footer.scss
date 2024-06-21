@@ -1,0 +1,143 @@
+@import "../../styles/mixin/mixin";
+@import "../../styles/typography/typography";
+
+footer {
+    margin-top: 80px;
+    background-color: var(--font-color);
+    color: var(--color-white);
+
+    .footer-one {
+        padding: 50px 0 40px 0;
+        margin-right: 78px;
+        @include space-between;
+        flex-wrap: wrap;
+        gap: 30px;
+
+        @media (max-width: 1024px) {
+            margin: 0;
+        }
+
+        @media (max-width: 576px) {
+            justify-content: center;
+        }
+
+        .footer-one-lorem {
+            .footer-one-lorem-logo {
+                @include flex;
+                gap: 15px;
+
+                @media (max-width: 576px) {
+                    justify-content: center;
+                }
+
+                h2 {
+                    @include font28;
+
+                    @media (max-width: 576px) {
+                        @include font24;
+                    }
+                }
+            }
+
+            p {
+                @include font16;
+                padding-top: 20px;
+                max-width: 450px;
+
+                @media (max-width: 576px) {
+                    text-align: center;
+                    @include font14;
+                    line-height: 20px;
+                }
+            }
+        }
+
+        .footer-one-links {
+            h3 {
+                @include font20;
+                margin-bottom: 30px;
+
+                @media (max-width: 576px) {
+                    @include font18;
+                }
+            }
+
+            a {
+                display: block;
+                @include font16;
+                line-height: 20px;
+                color: var(--color-white);
+                margin-bottom: 21px;
+
+                @media (max-width: 576px) {
+                    text-align: center;
+                    @include font14;
+                }
+
+                &:last-child {
+                    margin: 0;
+                }
+            }
+        }
+
+        .footer-one-contact {
+            h3 {
+                @include font20;
+                margin-bottom: 30px;
+                text-align: center;
+
+                @media (max-width: 576px) {
+                    @include font18;
+                }
+            }
+
+            .footer-one-contact-icon {
+                display: flex;
+                align-items: start;
+                gap: 12px;
+                margin-bottom: 23px;
+
+                @media (max-width: 576px) {
+                    gap: 7px;
+                    justify-content: center;
+
+                    img {
+                        width: 18px;
+                    }
+                }
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                p {
+                    @include font16;
+                    line-height: 24px;
+                    max-width: 280px;
+
+                    @media (max-width: 576px) {
+                        @include font14;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-two {
+        padding: 25px 0;
+        @include flex-center;
+        gap: 6px;
+        border-top: 1px solid var(--border5);
+
+        span {
+            @include font16;
+            line-height: 19px;
+
+            @media (max-width: 576px) {
+                @include font14;
+                text-align: center;
+            }
+        }
+    }
+}

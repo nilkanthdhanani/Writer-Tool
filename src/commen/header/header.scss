@@ -1,0 +1,91 @@
+@import "../../styles/mixin/mixin";
+@import "../../styles/typography/typography";
+
+header {
+    background: var(--color-white);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    transition: 0.3s ease;
+    margin-top: 35px;
+
+    @media (max-width: 576px) {
+        margin-top: 20px;
+    }
+
+    &.scrolled {
+        background-color: transparent;
+
+        .header-flex {
+            backdrop-filter: blur(6px);
+            background-color: var(--bgcolor-header);
+            border-radius: 90px;
+        }
+    }
+
+    .header-flex {
+        padding: 10px 20px;
+        @include space-between;
+
+        .header-logo {
+            @media (max-width: 576px) {
+                img {
+                    max-width: 130px
+                }
+            }
+        }
+
+        .header-icon {
+            @include flex;
+            gap: 35px;
+
+            .header-icon-write {
+                padding: 10px 22px;
+                border-radius: 30px;
+                background: var(--font-color);
+                @include flex;
+                gap: 8px;
+                cursor: pointer;
+
+                @media (max-width: 576px) {
+                    display: none;
+                }
+
+                img {
+                    padding: 3px;
+                }
+
+                span {
+                    display: block;
+                    color: var(--color-white);
+                    @include font16;
+                    font-weight: 600;
+                }
+            }
+
+            .header-icon-bell {
+                cursor: pointer;
+
+                @media (max-width: 576px) {
+                    display: none;
+                }
+            }
+
+            .header-icon-lady {
+                padding: 5px;
+                border-radius: 50%;
+                background-color: var(--bgcolor2);
+                cursor: pointer;
+
+                img {
+                    width: 50px;
+
+                    @media (max-width: 576px) {
+                        width: 30px;
+                    }
+                }
+            }
+        }
+    }
+}

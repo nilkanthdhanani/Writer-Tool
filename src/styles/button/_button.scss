@@ -1,0 +1,116 @@
+.hbc-grid1-button {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px 15px;
+
+    button {
+        padding: 8px 40px;
+        border-radius: 30px;
+        border: 1px solid var(--border-input);
+        color: var(--font-color);
+        background-color: transparent;
+        @include font16;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        &:hover {
+            background-color: var(--font-color);
+            color: var(--color-white);
+            transition: all 0.3s ease;
+        }
+
+        @media (max-width: 576px) {
+            @include font14;
+            padding: 10px 15px; 
+        }
+    }
+}
+
+.load-more-button {
+    @include flex-center;
+    margin: 15px 0 5px 0;
+
+    button {
+        padding: 8px 25px;
+        border-radius: 30px;
+        border: 1px solid var(--border-input);
+        color: var(--font-color2);
+        background-color: transparent;
+        @include font16;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        &:hover {
+            background-color: var(--font-color);
+            color: var(--color-white);
+            transition: all 0.3s ease;
+        }
+
+        @media (max-width: 576px) {
+            @include font14;
+        }
+    }
+}
+
+.latest-grid2-head-button {
+    @include flex-center;
+    
+    button {
+        width: 100%;
+        padding: 11px;
+        border-radius: 30px;
+        color: var(--color-white    );
+        background-color: var(--font-color);
+        border: 1px solid transparent;
+        @include font16;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        
+        &:hover {
+            border: 1px solid var(--border-input);
+            background-color: transparent;
+            color: var(--font-color);
+            transition: all 0.3s ease;
+        }
+
+        @media (max-width: 1180px) {
+            max-width: 550px;
+        }
+
+        @media (max-width: 576px) {
+            @include font14;
+        }
+    }
+}
+
+.latest-grid2-div2-button {
+    margin-top: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 13px 6px;
+
+    @media (max-width: 576px) {
+        margin-top: 20px;
+    }
+
+    button {
+        padding: 11px 20px;
+        border-radius: 30px;
+        border: 1px solid var(--border-input);
+        color: var(--font-color4);
+        background-color: transparent;
+        @include font14;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        &:hover {
+            background-color: var(--font-color);
+            color: var(--color-white);
+            transition: all 0.3s ease;
+        }
+
+        @media (max-width: 576px) {
+            @include font14;
+        }
+    }
+}
