@@ -70,6 +70,11 @@ export default function Home() {
               </div>
               <div className="hbc-grid2">
                 <img src={herobanner} alt="herobanner" />
+                <div className="hbc-grid2-button">
+                  <button id='selected'></button>
+                  <button></button>
+                  <button></button>
+                </div>
               </div>
             </div>
           </div>

@@ -21,8 +21,26 @@
 
         @media (max-width: 576px) {
             @include font14;
-            padding: 10px 15px; 
+            padding: 10px 15px;
         }
+    }
+}
+
+.hbc-grid2-button {
+    @include flex-center;
+    gap: 12px;
+    margin-top: 15px;
+
+    button {
+        padding: 6px;
+        border-radius: 50%;
+        border: 1px solid var(--border6);
+        background: transparent;
+    }
+    
+    #selected {
+        border: 1px solid var(--font-color);
+        background: var(--font-color);
     }
 }
 
@@ -54,18 +72,18 @@
 
 .latest-grid2-head-button {
     @include flex-center;
-    
+
     button {
         width: 100%;
         padding: 11px;
         border-radius: 30px;
-        color: var(--color-white    );
+        color: var(--color-white);
         background-color: var(--font-color);
         border: 1px solid transparent;
         @include font16;
         cursor: pointer;
         transition: all 0.3s ease;
-        
+
         &:hover {
             border: 1px solid var(--border-input);
             background-color: transparent;
